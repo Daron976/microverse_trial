@@ -8,81 +8,79 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <div>
-      <h1 id="title">Microverse Trials Survey</h1>
-      <p id="description">This survey is to help improve the quality of the Microverse Trials for applicants</p>
-    </div>
-    <div class="form">
-      <form id="survey-form">
-        
-        <div>
-          <label id="name-label">Name</label>
-          <input id="name" type="text" class="formInput" placeholder="What is your name"/>
-        </div>
-
-        <div>
-          <label id="email-label">Email</label>
-          <input id="email" type="text" class="formInput" placeholder="What is your Email Address"/>
-        </div>
-
-        <div>
-          <label id="number-label">Number</label>
-          <input id="number" type="text" class="formInput" placeholder="Enter a Value" min="17" max="50"/>
-        </div>
-
-        <div>
-          <label>How was the collaboration during the trials?</label>
-          <select id="dropdown">
-            <option>Choose</option>
-            <option>Bad</option>
-            <option>Fair</option>
-            <option>Good</option>
-            <option>Excellent</option>
-          </select>
-        </div>
-
-        <div class="radioInput">
-          <label>Did you learn form the collaboration?</label> 
-          <div class="radio">
-            <input type="radio" name="input-yes"/>
-            <label>Yes</label>
+    <div id="container">
+      <div class="header">
+        <h1 id="title">Microverse Trials Survey</h1>
+        <p id="description"><em>This survey is to help improve the quality of the Microverse Trials for applicants</em></p>
+      </div>
+      <div class="form">
+        <form id="survey-form">
+          
+          <div>
+            <label id="name-label">Name</label>
+            <input id="name" type="text" class="formInput" placeholder="What is your name"/>
           </div>
-
-          <div class="radio">
-            <input type="radio" name="input-no"/>
-            <label>No</label>
+  
+          <div>
+            <label id="email-label">Email</label>
+            <input id="email" type="text" class="formInput" placeholder="What is your Email Address"/>
           </div>
-        </div>
-
-        <div>
-          <label>Would you recommend the trials</label>
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox-input" value="2"/>
-            <label>Definely</label>
+  
+          <div>
+            <label id="number-label">Number</label>
+            <input id="number" type="text" class="formInput" placeholder="Enter a Value" min="17" max="50"/>
           </div>
-
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox-input" value="1"/>
-            <label>Maybe</label>
+  
+          <div id="select">
+            <label>How was the collaboration during the trials?</label>
+            <select id="dropdown">
+              <option>Choose</option>
+              <option>Bad</option>
+              <option>Fair</option>
+              <option>Good</option>
+              <option>Excellent</option>
+            </select>
           </div>
-
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox-input" value="0"/>
-            <label>Never</label>
+  
+          <div id="radio">
+            <label>Did you learn form the collaboration?</label> 
+            <div class="radio">
+              <input type="radio" name="input-yes"/>
+              <label>Yes</label>
+            </div>
+  
+            <div class="radio">
+              <input type="radio" name="input-no"/>
+              <label>No</label>
+            </div>
           </div>
-        </div>
-
-        <div class="text">
-          <label>Any Additional Commments</label>
-          <textarea></textarea>
-        </div>
-
-        <div>
-          <button id="submit">Submit</button>
-        </div>
-
-      </form>
+  
+          <div id="checkbox">
+            <label>Would you recommend the trials</label>
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox-input" value="2"/>
+              <label>Definely</label>
+            </div>
+  
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox-input" value="1"/>
+              <label>Maybe</label>
+            </div>
+  
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox-input" value="0"/>
+              <label>Never</label>
+            </div>
+          </div>
+  
+          <div class="text">
+            <label>Any Additional Commments</label>
+            <textarea></textarea>
+            <button id="submit">Submit</button>
+          </div>
+  
+        </form>
+      </div>
     </div>
     <script  src="js/index.js"></script>
   </body>
